@@ -5,5 +5,5 @@
 - [x] Basic Cache
 - [x] Static Site Host
 - [x] Hash Generator
-- [ ] PT VAT Validator
-- [ ] WebCawler Ping
+- [x] PT VAT Validator
+- [ ] WebCrawler Ping
