@@ -4,6 +4,6 @@
 ## Workers
 - [x] Basic Cache
 - [x] Static Site Host
-- [ ] Hash Generator
-- [ ] PT VAT Validator
-- [ ] WebCawler Ping
+- [x] Hash Generator
+- [x] PT VAT Validator
+- [ ] WebCrawler Ping
