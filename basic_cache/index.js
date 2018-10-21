@@ -9,8 +9,12 @@ async function basic_cache(event) {
   if (!response) {
     response = await fetch(event.request, {
       cf: {
-        cacheTtlByStatus: { "200-299": cache_time, 404: 1, "500-599": -1 },
-        apps: false ,
+        cacheTtlByStatus: {
+          "200-299": cache_time,
+          404: 1,
+          "500-599": -1
+        },
+        apps: false,
         minify: {
           javascript: true,
           css: true,
