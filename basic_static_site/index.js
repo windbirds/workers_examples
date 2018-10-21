@@ -3,6 +3,7 @@ addEventListener('fetch', event => {
 })
 
 async function static_site(request) {
+  const cache_time = 3600
   const parsedUrl = new URL(request.url)
   let path = parsedUrl.pathname
 
@@ -10,5 +11,19 @@ async function static_site(request) {
   if (lastSegment.indexOf('.') === -1)
     path += '/index.html'
 
-  return fetch("https://windbirds.ams.digitaloceanspaces.com/static/" + path)
+  return fetch("https://windbirds.ams.digitaloceanspaces.com/static/" + path, {
+    cf: {
+      cacheTtlByStatus: {
+        "200-299": cache_time,
+        404: 1,
+        "500-599": -1
+      },
+      apps: false,
+      minify: {
+        javascript: true,
+        css: true,
+        html: true
+      }
+    }
+  })
 }
