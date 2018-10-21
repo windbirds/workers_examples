@@ -1,2 +1,2 @@
-# workers_examples
-Cloudflare Workers
+# Cloudflare Workers Examples
+[Cloudflare Workers Docs](https://developers.cloudflare.com/workers/)
