@@ -1,4 +1,4 @@
-// only validates formating for Portugal taxes numbers, not actual tax deductibility
+// only validates formating for Portugal tax numbers, not actual tax deductibility
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event));
 });
