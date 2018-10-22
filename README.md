@@ -6,4 +6,5 @@
 - [x] Static Site Host
 - [x] Hash Generator
 - [x] PT VAT Validator
+- [x] Find client country
 - [ ] WebCrawler Ping
