@@ -8,4 +8,5 @@
 - [x] PT VAT Validator
 - [x] Find client country
 - [x] DoH Google Format with 1.1.1.1 Data
+- [x] Idempotency
 - [ ] WebCrawler Ping
