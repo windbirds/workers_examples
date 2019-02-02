@@ -12,5 +12,4 @@ async function handleRequest(request) {
   IdempotencyStore.push(IdempotencyKey)
   if (IdempotencyStore.length > 1000) IdempotencyStore.splice(0, 50)
   return new Response('success')
-
 }
