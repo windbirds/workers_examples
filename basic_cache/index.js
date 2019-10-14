@@ -1,10 +1,8 @@
-self.addEventListener('fetch', event => event.respondWith(basic_cache(event)))
-
-async function basic_cache(event) {
+const basic_cache = (event) => {
   // cache time set to 900 seconds
-  const cache_time = 900
-  let cache = caches.default
-  let response = await cache.match(event.request)
+  const cache_time = 900;
+  let cache = caches.default;
+  let response = await cache.match(event.request);
   // force cache time, disable apps, minify
   if (!response) {
     response = await fetch(event.request, {
@@ -22,8 +20,9 @@ async function basic_cache(event) {
         }
       }
     });
-    event.waitUntil(cache.put(event.request, response.clone()))
+    event.waitUntil(cache.put(event.request, response.clone()));
   }
+  return response;
+}
 
-  return response
-};
+addEventListener("fetch", event => event.respondWith(basic_cache(event)));

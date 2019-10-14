@@ -1,7 +1,3 @@
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event));
-});
-
 async function hashTo(message, digest) {
   // hash the message digest(SHA-1 SHA-256 SHA-384 SHA-512)
   const msgBuffer = new TextEncoder('utf-8').encode(message);
@@ -30,3 +26,7 @@ async function handleRequest(event) {
 
   return new Response(JSON.stringify(result), responseInit)
 }
+
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event));
+});
