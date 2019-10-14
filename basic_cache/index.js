@@ -1,4 +1,8 @@
-const basic_cache = (event) => {
+/**
+ * Basic Cache implementation
+ * @param {Event} event - Worker Event
+ */
+const basic_cache = async event => {
   // cache time set to 900 seconds
   const cache_time = 900;
   let cache = caches.default;
@@ -23,6 +27,6 @@ const basic_cache = (event) => {
     event.waitUntil(cache.put(event.request, response.clone()));
   }
   return response;
-}
+};
 
 addEventListener("fetch", event => event.respondWith(basic_cache(event)));
