@@ -11,4 +11,5 @@
 - [x] DoH Google Format with 1.1.1.1 Data
 - [x] Idempotency
 - [x] LogDNA
+- [x] Purge Cache from Cloudflare Zone
 - [ ] WebCrawler Ping

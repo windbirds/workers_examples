@@ -1,4 +1,4 @@
-async function static_site(request) {
+const static_site = async request => {
   const cache_time = 3600;
   const parsedUrl = new URL(request.url);
   let path = parsedUrl.pathname;
@@ -21,7 +21,7 @@ async function static_site(request) {
       }
     }
   });
-}
+};
 
 addEventListener("fetch", event => {
   event.respondWith(static_site(event.request));
