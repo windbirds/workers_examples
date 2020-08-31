@@ -12,4 +12,5 @@
 - [x] Idempotency
 - [x] LogDNA
 - [x] Purge Cache from Cloudflare Zone
+- [x] Redirect all uppercase URLs
 - [ ] WebCrawler Ping
