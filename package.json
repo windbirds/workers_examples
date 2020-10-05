@@ -1,0 +1,14 @@
+{
+  "name": "workers_examples",
+  "version": "2020.10.03-build.1",
+  "main": "index.js",
+  "repository": "git@github.com:windbirds/workers_examples.git",
+  "author": "Wind Birds <info@madeirawindbirds.com>",
+  "license": "MIT",
+  "scripts": {
+    "format": "npx prettier --write '**/*.{js,json}' --arrow-parens avoid --trailing-comma none"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2"
+  }
+}

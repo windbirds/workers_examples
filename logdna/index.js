@@ -104,7 +104,7 @@ const postRequests = async () => {
         headers: myHeaders,
         body: data
       }
-    ).then(function(r) {
+    ).then(function (r) {
       requests = [];
     });
   } catch (err) {
