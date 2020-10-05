@@ -23,6 +23,6 @@ const static_site = async request => {
   });
 };
 
-addEventListener("fetch", event => {
-  event.respondWith(static_site(event.request));
-});
+addEventListener("fetch", event =>
+  event.respondWith(static_site(event.request))
+);

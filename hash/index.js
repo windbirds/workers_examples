@@ -13,10 +13,9 @@ const hashTo = async (message, digest = "SHA-512") => {
   return hashHex;
 };
 
-
 /**
  * Hash string from URL
- * @param {Event} event 
+ * @param {Event} event
  */
 const handleRequest = async event => {
   const parsedUrl = new URL(event.request.url);

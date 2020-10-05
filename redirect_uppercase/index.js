@@ -1,4 +1,4 @@
-const handleRequest = async (event) => {
+const handleRequest = async event => {
   const lowerCase = event.request.url.toLowerCase();
   if (event.request.url !== lowerCase) {
     return Response.redirect(lowerCase, 301);
@@ -6,4 +6,4 @@ const handleRequest = async (event) => {
   return await fetch(event.request);
 };
 
-addEventListener("fetch", (event) => event.respondWith(handleRequest(event)));
+addEventListener("fetch", event => event.respondWith(handleRequest(event)));

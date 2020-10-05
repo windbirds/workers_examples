@@ -1,7 +1,7 @@
 let IdempotencyStore = [];
 /**
  * Rough Idempontency
- * @param {Event} event 
+ * @param {Event} event
  */
 const handleRequest = async event => {
   const IdempotencyKey = event.request.headers.get("Idempotency-Key");
