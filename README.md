@@ -13,4 +13,5 @@
 - [x] LogDNA
 - [x] Purge Cache from Cloudflare Zone
 - [x] Redirect all uppercase URLs
+- [x] PoP-level block
 - [ ] WebCrawler Ping
