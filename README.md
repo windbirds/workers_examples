@@ -14,4 +14,5 @@
 - [x] Purge Cache from Cloudflare Zone ```purge_cache```
 - [x] Redirect all uppercase URLs ```redirect_uppercase```
 - [x] Worker Triggers ```scheduled```
+- [x] PoP-level block  ```pop_block```
 - [ ] WebCrawler Ping
