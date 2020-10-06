@@ -19,9 +19,7 @@ const purgeCache = async (zone, key) => {
   return data.success;
 };
 
-const handleRequest = async event =>
+const handleRequest = async () =>
   new Response(await purgeCache("1234abcdf", "39123013adf"), { status: 200 });
 
-addEventListener("fetch", event => {
-  event.respondWith(handleRequest(event));
-});
+addEventListener("fetch", event => event.respondWith(handleRequest()));

@@ -44,6 +44,4 @@ const handleRequest = async event => {
   return new Response(JSON.stringify(result), responseInit);
 };
 
-addEventListener("fetch", event => {
-  event.respondWith(handleRequest(event));
-});
+addEventListener("fetch", event => event.respondWith(handleRequest(event)));
