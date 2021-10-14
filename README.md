@@ -15,4 +15,5 @@
 - [x] Redirect all uppercase URLs ```redirect_uppercase```
 - [x] Worker Triggers ```scheduled```
 - [x] PoP-level block  ```pop_block```
+- [x] Module  ```module```
 - [ ] WebCrawler Ping
